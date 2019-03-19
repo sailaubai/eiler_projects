@@ -4,8 +4,8 @@ import math
 def find_abc():
     i = 1000
     find = None
-    for a in range(1, i):
-        for b in range(1, i):
+    for a in range(1, int(i/2)):
+        for b in range(1, int(i/2)):
             c = math.sqrt((a**2) + (b**2))
             if c+a+b == i:
                 find = [a, b, c]
